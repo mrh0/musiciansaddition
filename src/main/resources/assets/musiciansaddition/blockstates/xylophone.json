@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "musiciansaddition:block/xylophone", "y":180 },
+        "facing=west": { "model": "musiciansaddition:block/xylophone", "y":90 },
+        "facing=south": { "model": "musiciansaddition:block/xylophone" },
+        "facing=east": { "model": "musiciansaddition:block/xylophone", "y":270 }
+    }
+}

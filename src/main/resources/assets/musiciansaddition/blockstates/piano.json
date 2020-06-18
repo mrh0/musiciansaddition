@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "musiciansaddition:block/small_piano", "y":180 },
+        "facing=west": { "model": "musiciansaddition:block/small_piano", "y":90 },
+        "facing=south": { "model": "musiciansaddition:block/small_piano" },
+        "facing=east": { "model": "musiciansaddition:block/small_piano", "y":270 }
+    }
+}

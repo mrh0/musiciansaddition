@@ -1,0 +1,33 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"WPW",
+		"IBI",
+		"WPW"
+	],
+	"key":
+	{
+		"W":
+		{
+			"tag": "minecraft:logs"
+		},
+		"P":
+		{
+			"tag": "planks"
+		},
+		"B":
+		{
+			"item": "minecraft:iron_bars"
+		},
+		"I":
+		{
+			"item": "minecraft:iron_ingot"
+		}
+	},
+	"result":{
+		"item": "musiciansaddition:piano",
+		"count": 1
+	}
+}
