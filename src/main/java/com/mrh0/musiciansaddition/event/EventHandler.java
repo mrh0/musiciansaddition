@@ -2,7 +2,9 @@ package com.mrh0.musiciansaddition.event;
 
 import com.mrh0.musiciansaddition.Index;
 import com.mrh0.musiciansaddition.MusiciansAddition;
+import com.mrh0.musiciansaddition.gui.BassGui;
 import com.mrh0.musiciansaddition.gui.PianoGui;
+import com.mrh0.musiciansaddition.gui.SpeakerGui;
 import com.mrh0.musiciansaddition.gui.XylophoneGui;
 
 import net.minecraft.block.Block;
@@ -48,6 +50,8 @@ public class EventHandler {
     public static void registerScreenFactories(){
     	ScreenManager.registerFactory(Index.PIANO_CONTAINER, PianoGui::new);
     	ScreenManager.registerFactory(Index.XYLOPHONE_CONTAINER, XylophoneGui::new);
+    	ScreenManager.registerFactory(Index.BASS_CONTAINER, BassGui::new);
+    	ScreenManager.registerFactory(Index.SPEAKER_CONTAINER, SpeakerGui::new);
     	//ScreenManager.registerFactory(Index.ELECTRIC_FURNACE_CONTAINER, ElectricFurnaceContainerGui::new);
     }
 	

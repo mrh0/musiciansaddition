@@ -3,28 +3,28 @@ package com.mrh0.musiciansaddition.gui;
 import java.util.ArrayList;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mrh0.musiciansaddition.MusiciansAddition;
-import com.mrh0.musiciansaddition.container.XylophoneContainer;
+import com.mrh0.musiciansaddition.container.BassContainer;
 import com.mrh0.musiciansaddition.gui.base.BaseInstrumentGui;
 import com.mrh0.musiciansaddition.midi.IMidiEvent;
 import com.mrh0.musiciansaddition.midi.MidiHandler;
-import com.mrh0.musiciansaddition.tileentity.XylophoneTileEntity;
+import com.mrh0.musiciansaddition.tileentity.BassTileEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
 
-public class XylophoneGui extends BaseInstrumentGui<XylophoneContainer> implements IMidiEvent {
+public class BassGui extends BaseInstrumentGui<BassContainer> implements IMidiEvent {
 
 	private final ResourceLocation gui = new ResourceLocation(MusiciansAddition.MODID, "textures/gui/container/keyboard.png");
 	
-	private final XylophoneContainer screenContainer;
-	private final XylophoneTileEntity te;
+	private final BassContainer screenContainer;
+	private final BassTileEntity te;
 	
 	private ArrayList<String> captext = new ArrayList<String>();
 	
 	private MidiHandler handler;
 	
-	public XylophoneGui(XylophoneContainer screenContainer, PlayerInventory inv, ITextComponent tc) {
+	public BassGui(BassContainer screenContainer, PlayerInventory inv, ITextComponent tc) {
 		super(screenContainer, inv, tc);
 		this.screenContainer = screenContainer;
 		this.te = screenContainer.te;
@@ -48,7 +48,7 @@ public class XylophoneGui extends BaseInstrumentGui<XylophoneContainer> implemen
 		drawUpperKeys(guiLeft, guiTop, 0, false);
 		drawUpperKeys(guiLeft, guiTop, 192, true);
 		
-		//String i = new TranslationTextComponent("musiciansaddition.container.piano").getFormattedText();
+		//String i = new TranslationTextComponent("musiciansaddition.container.Bass").getFormattedText();
 		//this.minecraft.fontRenderer.drawString(i, this.guiLeft + this.xSize / 2 - this.minecraft.fontRenderer.getStringWidth(i) / 2, this.guiTop + 6 + 84, 4210752);
 	}
 	
@@ -204,6 +204,6 @@ public class XylophoneGui extends BaseInstrumentGui<XylophoneContainer> implemen
 
 	@Override
 	public int getOctaveOffset() {
-		return 0;
+		return -2;
 	}
 }

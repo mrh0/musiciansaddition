@@ -74,7 +74,7 @@ public class Notes {
 	}
 	
 	public static void playNote(World world, BlockPos pos, SoundEvent evt, int note) {
-		if(note < 0 || note > 24)
+		if(note < 0)// || note > 24)
 			return;
 		float f = (float)Math.pow(2.0D, (double)(note - 12) / 12.0D);
 		world.playSound((PlayerEntity)null, pos, evt, SoundCategory.RECORDS, 3.0F, f);

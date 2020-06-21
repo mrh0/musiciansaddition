@@ -3,6 +3,7 @@ package com.mrh0.musiciansaddition.blocks;
 import com.mrh0.musiciansaddition.blocks.base.BaseDerivativeBlock;
 import com.mrh0.musiciansaddition.tileentity.PianoTileEntity;
 import com.mrh0.musiciansaddition.tileentity.XylophoneTileEntity;
+import com.mrh0.musiciansaddition.tileentity.base.BaseInstrument;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -64,7 +65,7 @@ public class Xylophone extends BaseDerivativeBlock {
             return ActionResultType.SUCCESS;
         }
     	
-    	XylophoneTileEntity mte = (XylophoneTileEntity) worldIn.getTileEntity(pos);
+    	BaseInstrument mte = (BaseInstrument) worldIn.getTileEntity(pos);
 		NetworkHooks.openGui((ServerPlayerEntity) player, (INamedContainerProvider) mte, extraData -> {
             extraData.writeBlockPos(mte.getPos());
         });

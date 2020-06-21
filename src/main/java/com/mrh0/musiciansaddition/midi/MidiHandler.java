@@ -80,8 +80,93 @@ public class MidiHandler {
 	
 	public int playNote(String note, int octave) {
 		int r = -1;
+		
+		/*if(octave == 0) {
+			switch(note) {
+				case "A":
+					r = -35; break;
+				case "A#":
+					r = -34; break;
+				case "B":
+					r = -33; break;
+			}
+		}*/
+		
+		if(octave == 1) {
+			switch(note) {
+				/*case "C":
+					r = -32; break;
+				case "C#":
+					r = -31; break;
+				case "D":
+					r = -30; break;
+				case "D#":
+					r = -29; break;
+				case "E":
+					r = -28; break;
+				case "F":
+					r = -27; break;*/
+				case "F#":
+					r = -26; break;
+				case "G":
+					r = -25; break;
+				case "G#":
+					r = -24; break;
+				case "A":
+					r = -23; break;
+				case "A#":
+					r = -22; break;
+				case "B":
+					r = -21; break;
+			}
+		}
+		
 		if(octave == 2) {
 			switch(note) {
+				case "C":
+					r = -20; break;
+				case "C#":
+					r = -19; break;
+				case "D":
+					r = -18; break;
+				case "D#":
+					r = -15; break;
+				case "E":
+					r = -14; break;
+				case "F":
+					r = -13; break;
+				case "F#":
+					r = -12; break;
+				case "G":
+					r = -11; break;
+				case "G#":
+					r = -10; break;
+				case "A":
+					r = -9; break;
+				case "A#":
+					r = -8; break;
+				case "B":
+					r = -7; break;
+			}
+		}
+		
+		
+		if(octave == 3) {
+			switch(note) {
+				case "C":
+					r = -6; break;
+				case "C#":
+					r = -5; break;
+				case "D":
+					r = -4; break;
+				case "D#":
+					r = -3; break;
+				case "E":
+					r = -2; break;
+				case "F":
+					r = -1; break;
+			
+			
 				case "F#":
 					r = 0; break;
 				case "G":
@@ -96,20 +181,9 @@ public class MidiHandler {
 					r = 5; break;
 			}
 		}
-		if(octave == 3) {
+		
+		if(octave == 4) {
 			switch(note) {
-				case "F#":
-					r = 12; break;
-				case "G":
-					r = 13; break;
-				case "G#":
-					r = 14; break;
-				case "A":
-					r = 15; break;
-				case "A#":
-					r = 16; break;
-				case "B":
-					r = 17; break;
 				case "C":
 					r = 6; break;
 				case "C#":
@@ -122,13 +196,23 @@ public class MidiHandler {
 					r = 10; break;
 				case "F":
 					r = 11; break;
+				case "F#":
+					r = 12; break;
+				case "G":
+					r = 13; break;
+				case "G#":
+					r = 14; break;
+				case "A":
+					r = 15; break;
+				case "A#":
+					r = 16; break;
+				case "B":
+					r = 17; break;
 			}
 		}
 		
-		if(octave == 4) {
+		if(octave == 5) {
 			switch(note) {
-				case "F#":
-					r = 24; break;
 				case "C":
 					r = 18; break;
 				case "C#":
@@ -141,8 +225,73 @@ public class MidiHandler {
 					r = 22; break;
 				case "F":
 					r = 23; break;
+				case "F#":
+					r = 24; break;
+				
+				case "G":
+					r = 25; break;
+				case "G#":
+					r = 26; break;
+				case "A":
+					r = 27; break;
+				case "A#":
+					r = 28; break;
+				case "B":
+					r = 29; break;
 			}
 		}
+		
+		if(octave == 6) {
+			switch(note) {
+				case "C":
+					r = 42; break;
+				case "C#":
+					r = 43; break;
+				case "D":
+					r = 44; break;
+				case "D#":
+					r = 45; break;
+				case "E":
+					r = 46; break;
+				case "F":
+					r = 47; break;
+				case "F#":
+					r = 48; break;
+				case "G":
+					r = 49; break;
+			}
+		}
+		
+		/*if(octave == 6) {
+			switch(note) {
+				case "C":
+					r = 30; break;
+				case "C#":
+					r = 31; break;
+				case "D":
+					r = 32; break;
+				case "D#":
+					r = 33; break;
+				case "E":
+					r = 34; break;
+				case "F":
+					r = 35; break;
+				case "F#":
+					r = 36; break;
+				case "G":
+					r = 37; break;
+				case "G#":
+					r = 38; break;
+				case "A":
+					r = 39; break;
+				case "A#":
+					r = 40; break;
+				case "B":
+					r = 41; break;
+			}
+		}*/
+		
+		
 
 		return r;
 	}

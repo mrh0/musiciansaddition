@@ -23,6 +23,7 @@ import com.mrh0.musiciansaddition.event.TileEntityRegistry;
 import com.mrh0.musiciansaddition.itemgroup.ModGroup;
 import com.mrh0.musiciansaddition.midi.MidiHandler;
 import com.mrh0.musiciansaddition.network.PlayNotePacket;
+import com.mrh0.musiciansaddition.network.UpdateSpeakerPacket;
 import com.mrh0.musiciansaddition.proxy.*;
 
 /*
@@ -77,6 +78,7 @@ public class MusiciansAddition {
     public void postInit(FMLLoadCompleteEvent evt) {
     	int i = 0;
         Network.registerMessage(i++, PlayNotePacket.class, PlayNotePacket::encode, PlayNotePacket::decode, PlayNotePacket::handle);
+        Network.registerMessage(i++, UpdateSpeakerPacket.class, UpdateSpeakerPacket::encode, UpdateSpeakerPacket::decode, UpdateSpeakerPacket::handle);
         
     	System.out.println("Musicians Addition Initialized!");
     }

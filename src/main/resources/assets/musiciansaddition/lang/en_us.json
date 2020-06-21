@@ -1,3 +1,25 @@
 {
-	"block.musiciansaddition.piano":"Small Piano"
+	"itemGroup.musiciansaddition:musicians_addition_group":"Musicians Instruments & Additions",
+
+	"block.musiciansaddition.piano":"Small Piano",
+	"block.musiciansaddition.xylophone":"Small Xylophone",
+	"block.musiciansaddition.bass":"Bass",
+	"block.musiciansaddition.speaker":"Midi Speaker",
+	
+	"note.musiciansaddition.bass": "Bass",
+	"note.musiciansaddition.snare": "Snare",
+	"note.musiciansaddition.hat": "Hat",
+	"note.musiciansaddition.basedrum": "Basedrum",
+	"note.musiciansaddition.bell": "Bell",
+	"note.musiciansaddition.flute": "Flute",
+	"note.musiciansaddition.chime": "Chime",
+	"note.musiciansaddition.guitar": "Guitar",
+	"note.musiciansaddition.xylophone": "Xylophone",
+	"note.musiciansaddition.iron_xylophone": "Iron Xylophone",
+	"note.musiciansaddition.cow_bell": "Cow Bell",
+	"note.musiciansaddition.didgeridoo": "Didgeridoo",
+	"note.musiciansaddition.bit": "Bit",
+	"note.musiciansaddition.banjo": "Banjo",
+	"note.musiciansaddition.pling": "Pling",
+	"note.musiciansaddition.harp": "Harp"
 }

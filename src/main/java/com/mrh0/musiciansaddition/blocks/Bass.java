@@ -1,8 +1,10 @@
 package com.mrh0.musiciansaddition.blocks;
 
 import com.mrh0.musiciansaddition.blocks.base.BaseDerivativeBlock;
+import com.mrh0.musiciansaddition.tileentity.BassTileEntity;
 import com.mrh0.musiciansaddition.tileentity.PianoTileEntity;
 import com.mrh0.musiciansaddition.tileentity.base.BaseInstrument;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -24,7 +26,7 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 
-public class Piano extends BaseDerivativeBlock {
+public class Bass extends BaseDerivativeBlock {
 	
 	protected static final VoxelShape SHAPE_NORTH = Block.makeCuboidShape(0d, 0d, 3d, 16d, 16d, 16d);
 	protected static final VoxelShape SHAPE_SOUTH = Block.makeCuboidShape(0d, 0d, 0d, 16d, 16d, 13d);
@@ -32,8 +34,8 @@ public class Piano extends BaseDerivativeBlock {
 	protected static final VoxelShape SHAPE_WEST = Block.makeCuboidShape(3d, 0d, 0d, 16d, 16d, 16d);
 	public static final DirectionProperty FACING = DirectionProperty.create("facing", p -> p.getIndex() > 1 && p.getIndex() < Direction.values().length);
 
-	public Piano() {
-		super("piano", Blocks.OAK_LOG);
+	public Bass() {
+		super("bass", Blocks.OAK_LOG);
 	}
 	
 	@Override
@@ -53,7 +55,7 @@ public class Piano extends BaseDerivativeBlock {
 	
 	@Override
 	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-		return new PianoTileEntity();
+		return new BassTileEntity();
 	}
 	
 	@Override

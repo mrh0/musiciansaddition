@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mrh0.musiciansaddition.MusiciansAddition;
 import com.mrh0.musiciansaddition.container.PianoContainer;
+import com.mrh0.musiciansaddition.gui.base.BaseInstrumentGui;
 import com.mrh0.musiciansaddition.midi.IMidiEvent;
 import com.mrh0.musiciansaddition.midi.MidiHandler;
 import com.mrh0.musiciansaddition.network.PlayNotePacket;
@@ -206,5 +207,10 @@ public class PianoGui extends BaseInstrumentGui<PianoContainer> implements IMidi
 	@Override
 	public TileEntity getTE() {
 		return te;
+	}
+
+	@Override
+	public int getOctaveOffset() {
+		return 0;
 	}
 }
